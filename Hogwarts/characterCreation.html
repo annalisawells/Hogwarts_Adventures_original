@@ -2,6 +2,8 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<script src="style.js"></script>
 	<title> Welcome to Hogwarts!
 	</title>
 </head>
@@ -9,14 +11,31 @@
 <body>
 <header class="flex-container">
 	<a href="./index.html"><h1>Welcome to Hogwarts!</h1></a>
+		
+  <!-- Navigation links (hidden by default) -->
+<div id="mobile-menu" class="fas fa-feather-alt fa-2x" onclick="myFunction()"></div>
+
+<div id="myLinks" style="display: none">
+  <ul>
+  <li><a href="./characterCreation.html">Creating a Character</a>
+  <li><a href="./index.html#houseCup">Houses</a>
+  <li><a href="#magic">Magic</a>
+  <li><a href="#items">Goods &amp; Services</a>
+  </ul>
+</div>
+
+ <!-- Navigation links (visible by default) -->
 <nav>
-	<a href="./characterCreation.html">Creating a Character</a>
-	<a href="./index.html#houseCup">Houses</a>
- 	<a href="#magic">Magic</a>
- 	<a href="#items">Goods & Services</a>
+	<ul>
+		<li><a href="./characterCreation.html">Creating a Character</a></li>
+		<li><a href="./index.html#houseCup">Houses</a></li>
+ 		<li><a href="#magic">Magic</a></li>
+ 		<li><a href="#items">Goods &amp; Services</a></li>
+ 	</ul>
 </nav>
 	
 </header>
+
 
 <!-- Welcome Landing -->
 <div class="flex-container welcome">
@@ -26,6 +45,8 @@
     <h4> The adventure begins</h4>
   </a></div>
 </div>
+<!-- To Top Menu Scroll -->
+<button class="fas fa-level-up-alt" onclick="topFunction()" id="myBtn"></button>
 
 <!-- First Section: Title & Index -->
 <div class="flex-container main">
@@ -50,25 +71,18 @@
 <div id="attributes" class="content extra-padding">
 	<h2>Attributes</h2>
 	<h5>These reflect your characters quantified innate physical and mental abilities. Each starting attribute has a score that ranges from 2 (miserably weak) to 12 (amazing). </h6>
-	<h4>Primary:</h5>
+	
 	<ul><strong>Choose TWO as your favored attributes.</strong>
 		<li><strong>Strength:</strong> your ability to exert force and do damage physically</li>
-		<li><strong>Vitality:</strong> vigour, stamina, and health</li>
-		<li><strong>Nimbleness:</strong> coordination, dexterousness, and deftness</li>
-		<li><strong>Perception:</strong> your awareness of your surroundings, including your ability to spot that which is hidden</li>
-		<li><strong>Bearing:</strong> your character's force of personality, presence, and ability to inspire feelings such as awe, fear, or courage</li>
-		<li><strong>Intellect:</strong>  your character's memory, capacity for clear and reasoned thought, intelligence, and store of basic knowledge</li>
-		<li><strong>Masgic:</strong> the ability to cast spells properly</li>
+		<li><strong>Dexterity:</strong> coordination, dexterousness, and deftness, such as your speed and reflexes: your ability to avoid being hit by a Bludger and like dangers.</li>
+		<li><strong>Consitution:</strong> vigour, stamina, and health; including, but not limited to your toughness, your ability to withstand pain, to throw off the effects of poison or sickness, to resist heat or cold, etc.</li>
+		<li><strong>Intelligence:</strong>  your character's memory, capacity for clear and reasoned thought, intelligence, and store of basic knowledge</li>
+		<li><strong>Wisdom:</strong> your strength of will: your ability to stave off fear and domination and to remain true to yourself and your word, regardless of blandishments or torture; also: your common sense and insight: your ability to determine which is true, or the best course of action, or what others feel or believe</li>
+		<li><strong>Charisma:</strong> your character's force of personality, presence, and ability to inspire feelings such as awe, fear, or courage</li>
+		<li><strong>**Magic:**</strong> the ability to cast spells properly, whether nautally gifted or through hard work and studying intently. <em>Note: Magic is already a bonus favored class for this campaign!</em></li>
 	</ul>
-	<h4>Secondary:</h4>
-	<ul><strong>Choose ONE as your favored attribute.</strong>
-		<li><strong>Stamina:</strong>  your toughness, your ability to withstand pain, to throw off the effects of poison or sickness, to resist heat or cold, etc.</li>
-		<li><strong>Swiftness:</strong>  your speed and reflexes: your ability to avoid being hit by a Bludger and like dangers. </li>
-		<li><strong>Willpower:</strong>  your strength of will: your ability to stave off fear and domination and to remain true to yourself and your word, regardless of blandishments or torture. </li>
-		<li><strong>Wisdom:</strong>  your common sense and insight: your ability to determine which is true, or the best course of action, or what others feel or believe</li>
-		<li><strong>Defense:</strong>  your natural ability to avoid blows and weapon fire in combat. Your Defense rating equals 7 + Nimbleness modifier. </li>
-		<li><strong>Wisdom:</strong>  your common sense and insight: your ability to determine which is true, or the best course of action, or what others feel or believe</li>
-	</ul>
+	<p><strong>How to calculate your attribute scores:</strong> RANDOM: Roll 4d6, discard the lowest die result, and add the three remaining results together. Record this total and repeat the process until six numbers are generated. Assign these totals to your ability scores as you see fit (typically, the highest two will go towards your favored attributes)</p>
+	<p> In the case that you try this random mentod and it gives you very sad scores, feel free to use the BUY method instead: Start with a 10 for each ability score, and distribute 12 points   <em>(1-to-1 ratio, so if you add 2 points to Dexterity, you will have a Dex score of 12 and have a remaining 10 other points to spend)</em> amongst them as you see fit. Don't bother to save any, as you cannot use them later!
 	<br>
 </div>
 <hr id="heritage">	
@@ -82,8 +96,9 @@
 				<p>Hermione Granger, Colin Creevey</div>
 			<div class="detail2"><h4>Qualities:</h4>
 				<ul>
-					<li>+2 bonus to Knowledge, Culture: (Native Muggle) skill tests</li>
-					<li>-2 penalty to <i>Use Item: Magic skill</i> tests</li>
+					<li>+2 bonus to Knowledge (Muggle), Use Muggle device</li>
+					<li>-2 penalty to Use Magic device</li>
+					<li>+2 Intelligence, +1 Magic, -2 Magic
 					<li>Bonus Edge: Magic Talent</li>
 				</ul>
 			</div></div>
@@ -95,11 +110,12 @@
 			</div>
 			<div class="detail2"><h4>Qualities:</h4>
 				<ul>
-					<li> +2 bonus to Use Item: Muggle skill tests AND<br>
-						-2 penalty to Use Item: Magic skill tests<br>
+					<li> +2 bonus to Knowledge (Muggle), Use Muggle device<br>
+						-2 penalty to Knowledge (Magic), Use Magic device<br>
 						<strong>OR</strong><br>
-						+2 bonus to Use Item: Magic skill tests<br>
-						-2 penalty to Use Item: Muggle skill tests </p></li>
+						+2 bonus to Knowledge (Magic), Use Magic device<br>
+						-2 penalty to Knowledge (Muggle), Use Muggle device</p></li>
+					<li><li>+2 Wisdom, +1 Charisma, -2 Strength
 					<li>Bonus Edge: Magic Talent</li>
 				</ul>
 			</div>
@@ -111,22 +127,83 @@
 				<p>Draco Malfoy, Ron Weasley</div>
 			<div class="detail2"><h4>Qualities:</h4>
 				<ul>
-					<li>+2 bonus to Use Item: Magic skill tests</li>
-					<li>-2 penalty to Use Item: Muggle skill tests </li>
+					<li>+2 bonus to Knowledge (Magic), Use Magic device</li>
+					<li>-2 penalty to Knowledge (Muggle), Use Muggle device</li>
+					<li>+2 Magic, +1 Charisma, -2 Dexterity
 					<li>Bonus Edge: Magic Talent</li>
 				</ul>
 			</div>
 </div></div>
 <hr id="wizHouse">
-
 <div class="content">
-	<h2>Wizard House</h2>
-	<p></p>
-</div>
+	<h2 >Wizard House</h2>
+	<h4>Gryffindor</h4>
+		<p class="content">Those who have been chosen to be a part of Gryffindor House have such qualities that Godric, himself, embodied: honor, courage, and forthrightness. If you are of this house, you are be expected to be trustworthy and brave, but know when to break the rules when it's necessary to do what is right. </p>
+		<div class="flex-container">
+			<div class="detail"><h4>Edges (Choose one):</h4>
+				<p>Bold, Courageous, Forthright, Valour, Valiant</div>
+			<div class="detail2"><h4>Skill Picks:</h4>
+				<p>Acrobatics +2, Athletics +1, Diplomacy +1, Bluff +1, Spellcraft +1, Sleight of Hand +1</p></div></div>
+	<h4>Hufflepuff</h4>
+		<p class="content">Those who have been chosen to join the Hufflepuff House are renowned for their hardy work ethic and steadfastness. A Hufflepuff remains true and loyal to the end.</p>
+		<div class="flex-container">
+			<div class="detail"><h4>Edges (Choose one):</h4>
+				<p>Doughty, Faithful, Fortitude, Indomitable, Valiant</div>
+			<div class="detail2"><h4>Skill Picks:</h4>
+				<p>Diplomacy +2, Handle Animal +1, Investigate +1, First Aid +1, Perception +1, Spellcraft +1</p></div></div>
+	<h4>Slytherin</h4>
+		<p class="content">The snake isn't the symbol of the Slytherin House just because its founder; it is the embodiment of what thosechosen in the house stand for: cunning, guile, and always ready to strike when an opportunity presents itself. Scheming in dark corners and bullying others is just a taste of what makes up a typical Slytherin</p>
+		<div class="flex-container">
+			<div class="detail"><h4>Edges (Choose one):</h4>
+				<p>Bold, Competitive, Confident, Keen-Eared, Keen-Eyed</div>
+			<div class="detail2"><h4>Skill Picks:</h4>
+				<p>Intimidate +2, Forgery +1, Sense Motive +1, Sleight of Hand +1, Spellcraft +1, Stealth +1</p></div></div>
+	<h4>Ravenclaw</h4>
+		<p class="content">Students who are intelligent, studious, and resourceful generally are found in the house of Ravenclaw. A quick witand the timely spell are the signatures of a member of the Ravenclaw House.</p>
+		<div class="flex-container">
+			<div class="detail"><h4>Edges (Choose one):</h4>
+				<p>Concentration, Curious, Meticulous, Studious, Wise</div>
+			<div class="detail2"><h4>Skill Picks:</h4>
+				<p>Spellcraft +2, Brew Potion or Divination +1, Appraise +1, Knowledge (magic) +1, Knowledge (muggle) +1</p></div></div>
 <hr id="skills">
 
 <div class="content">
 	<h2>Skills</h2>
+	<div class="row">
+  <div class="column">
+  	<ul>
+  		<li>Acrobatics (Dex)</li>
+  		<li>Atheletics (Str)</li>
+  		<li>Appraise (Wis)</li>
+  		<li>Bluff (Cha)</li>
+  		<li>Brew Potion* (Magic)</li>
+  		<li>Diplomacy (Cha)</li>
+  		<li>Disable Device* (Dex)</li>
+  		<li>Disguise (Cha)</li>
+  		<li>Divination* (Magic)</li>
+  		<li>Escape Artist* (Dex)</li>
+  		<li>First Aid (Wis)</li>
+  		<li>Fly (Magic)</li>
+  		<li>Forgery* (Int)</li>
+  	</ul>
+  	</div>
+  <div class="column">
+	<ul>
+  		<li>Handle Animal* (Cha)</li>
+  		<li>Intimidate (Cha)</li>
+  		<li>Investigate (Wis)</li>
+  		<li>Knowledge (magic)* (Int)</li>
+  		<li>Knowledge (muggle)* (Int)</li>
+  		<li>Perception (Wis)</li>
+  		<li>Sense Motive (Wis)</li>
+  		<li>Sleight of Hand* (Dex)</li>
+  		<li>Spellcraft* (Magic)</li>
+  		<li>Stealth (Dex)</li>
+  		<li>Use Magic Device* (Int)</li>
+  		<li>Use Muggle Device* (Int)</li>
+  	</ul>
+  </div>
+</div>
 </div>
 <hr id="miscCreation">
 
