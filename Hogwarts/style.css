@@ -61,15 +61,29 @@ header {
 	top: 0;
 }
 
+#mobile-menu {
+  display: none;
+}
+
+#myLinks {
+  display: none;
+}
+
+/* TODO: When going from small screen back to full size, #myLinks stays visible next to title */
+
 nav {
 	text-align: right;
 	font-family: "Permanent Marker";
-  	flex-grow: 1;
-  	display: inline-block;
-  	padding-right: 10px;
+  flex-grow: 1;
+  display: inline-block;
+  padding-right: 10px;
 }
 
-nav a {
+nav ul {
+  list-style: none;
+}
+
+nav li {
   display: inline-block;
   padding: 20px 10px;
   color: seashell;
@@ -81,7 +95,7 @@ header h1 {
 	text-align: left;
 	color:seashell;
 	padding: 0px 20px;
-    font-size: 42px;
+  font-size: 42px;
 	letter-spacing: 1px;
 	margin-top: 10px;
 }
@@ -91,17 +105,13 @@ a {
 	color: inherit;
 }
 
-a:hover {
-	opacity: 0.85;
-}
-
 .welcome {
 	margin-top: 3px;
 	width: 1200px;
-    height: 450px;
-    background-image: url(./hogwarts_watercolor.jpg);
-    background-repeat: no-repeat;
-    background-position: center -136px;
+  height: 450px;
+  background-image: url(./hogwarts_watercolor.jpg);
+  background-repeat: no-repeat;
+  background-position: center -136px;
 	opacity: 0.97;
 	color: black;
 	margin: auto;
@@ -116,6 +126,10 @@ a:hover {
     right: 88px;
     font-size: 25px;
    	font-family: "Permanent Marker";
+}
+
+#myBtn {
+  display: hidden;
 }
 
 .main {
@@ -157,9 +171,24 @@ div.points img {
 
 .map {
 	flex: 2 2 60%;
-	background-color: #AF2D6C;
 	margin-right: 33px;
-	vertical-align: center;
+  width: 800px;
+  height: 520px;
+  position: relative;
+}
+
+.img-hufflepuff {
+  background-image: url(./HufflepuffCommonroom_PM_.jpg);
+  background-repeat: no-repeat;
+  background-position: right -647px;
+  overflow: hidden;
+}
+
+.img-slytherin {
+  background-image: url(./SlytherinCommonRoom.jpg);
+  background-repeat: no-repeat;
+  background-position: left -649px;
+  overflow: hidden;
 }
 
 .story {
@@ -190,6 +219,7 @@ div.points img {
     font-size: 20px;
     border-radius: 3px;
 }
+
 .index img {
 	float: left;
     height: 312px;
@@ -200,10 +230,10 @@ div.points img {
 
 .index ol {
 	margin: 57px;
-    display: inline-block;
-    text-align: left;
-    float: left;
-    position: relative
+  display: inline-block;
+  text-align: left;
+  float: left;
+  position: relative
 }
 
 .index ol h2 {
@@ -229,6 +259,7 @@ div.points img {
 	width: 80%;
 	text-align: left;
 	padding-left: 20px;
+  letter-spacing: 1.5px;
 }
 
 .content ul {
@@ -253,10 +284,15 @@ hr {
     height: 1px;
     width: 60%;
     border-top: 4px dotted #20537E;
-    padding: 25px 0px;
 }
 
+.row {
+    display: flex;
+}
 
+.column {
+    flex: 50%;
+}
 
 footer {
 	font-size: 12px;
@@ -264,4 +300,93 @@ footer {
 	background-color: #20537E;
 	border-top: 2px solid seashell;
 	margin-top: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+    header {
+    position: absolute;
+    flex-grow: 2;
+  }
+
+  header h1 {
+    text-align: left;
+  }
+
+#mobile-menu {
+  display: block;
+  float: right;
+  padding: 10px;
+}
+
+#myLinks {
+  min-width: 180px;
+  display: block;
+}
+
+#myLinks li {
+  list-style: none;
+}
+
+#myLinks a {
+  float: right;
+  display: hidden;
+  color: seashell;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #20537E ;
+}
+
+nav {
+  display:none;
+}
+
+body {
+  font-size:calc(12px + 1.5vw);
+}
+
+.welcome {
+  width: 100%;
+}
+
+.flex-container {
+  width: 100%;
+}
+
+.index {
+  flex: 1;
+}
+
+.index img {
+  float: none;
+  max-width: 100%;
+}
+
+.index ol {
+  text-align: center;
+  margin-top: 0;
+  font-size:calc(12px + 1.5vw);
+  padding-right: 0px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #20537E; /* Set a background color */
+    color: seashell; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 18px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }
