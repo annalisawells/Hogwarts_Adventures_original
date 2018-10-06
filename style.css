@@ -1,0 +1,485 @@
+@font-face {
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Satisfy Regular'), local('Satisfy-Regular'), url(https://fonts.gstatic.com/s/satisfy/v8/rP2Hp2yn6lkG50LoCZOIHQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v7/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Spirax';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Spirax-Regular'), url(https://fonts.gstatic.com/s/spirax/v6/buE3poKgYNLy0F3sWUFs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v9/XRXV3I6Li01BKofINeaB.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+	display: block;
+}
+
+body {
+	margin: 0;
+	font-family: "Spirax", Helvetica, sans-serif;
+	color: seashell;
+	background-color: #20537E;
+	font-size: 20px;
+	text-align: center;
+	positon: relative;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header {
+	z-index: 10;
+	width: 100%;
+	height: 70px;
+	border-bottom: 2px solid seashell;
+	color: seashell;
+	position: fixed;
+	background-color: #20537E;
+	top: 0;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#myLinks {
+  display: none;
+}
+
+nav {
+	text-align: right;
+	font-family: "Permanent Marker";
+  flex-grow: 1;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 20px 10px;
+  color: seashell;
+  text-decoration: none;
+}
+
+header h1 {
+	display: block;
+	text-align: left;
+	color:seashell;
+	padding: 0px 20px;
+  font-size: 42px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.welcome {
+	margin-top: 3px;
+	width: 1200px;
+  height: 450px;
+  background-image: url(./hogwarts_watercolor.jpg);
+  background-repeat: no-repeat;
+  background-position: center -136px;
+	opacity: 0.97;
+	color: black;
+	margin: auto;
+	position: relative;
+}
+
+.intro {
+	height: 90px;
+  	width: auto;
+  	position: absolute;
+  	top: 155px;
+    right: 88px;
+    font-size: 25px;
+   	font-family: "Permanent Marker";
+}
+
+#myBtn {
+  display: hidden;
+}
+
+.main {
+	margin-top: 10px;
+	padding-top: 33px;
+	padding-bottom: 33px;
+    background-color: #F1F2C5;
+    width: 1200px;
+    margin: auto;
+    color: black;
+    border-top: 9px solid #20537E;
+    border-bottom: 9px solid #20537E;
+    position: relative;
+   }
+
+.houseCupTitle {
+	flex: 1 1 25%;
+	font-size: 45px;
+	padding: 0px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.points {
+    border: 4px double #20537E;
+    float: left;
+    width: 180px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+div.points:hover {
+    border: 4px double #777;
+}
+
+div.points img {
+	padding-top: 14px;
+    width: 150px;
+    height: auto;
+}
+
+.map {
+	flex: 1 1 85%;
+	margin-right: 33px;
+  height: 450px;
+  position: relative;
+}
+
+.img-hufflepuff {
+  background-image: url(./HufflepuffCommonroom_PM_.jpg);
+  background-repeat: no-repeat;
+  background-position: right -647px;
+  overflow: hidden;
+}
+
+.img-slytherin {
+  background-image: url(./SlytherinCommonRoom.jpg);
+  background-repeat: no-repeat;
+  background-position: left -649px;
+  overflow: hidden;
+}
+
+.img-ravenclaw {
+  background-image: url(./RavenclawCommonRoom.jpg);
+  background-repeat: no-repeat;
+  background-position: left -426px;
+  overflow: hidden;
+}
+
+.img-gryffindor {
+  background-image: url(./GryffindorCommonRoom_PM.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.story {
+	margin-top: 45px;
+}
+
+.story h2 {
+	font-family: "Permanent Marker", sans-serif;
+}
+
+.handwriting {
+	font-family: 'Satisfy', sans-serif;
+	font-size: 25px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: 700px;
+	width: 70%;
+	display: block;
+	margin-bottom: 33px;
+}
+
+.index {
+	flex: 2 2 60%;
+  background-color: rgba(128,128,128, 0.15);
+  margin-right: 33px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.index img {
+	float: left;
+    height: 312px;
+    width: auto;
+    padding: 45px;
+    border-radius: 39%;
+}
+
+.index ol {
+	margin: 57px;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  width: 190px;
+}
+
+.index ol h2 {
+	text-align: left;
+    text-decoration: underline;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.index li {
+	padding-left: 10px;
+}
+
+.index a:hover {
+	opacity: 0.55;
+}
+
+.scroll-image {
+  max-width: 700px;
+  padding: 0;
+}
+
+.content {
+	width: 80%;
+	text-align: left;
+	padding-left: 20px;
+  letter-spacing: 1.5px;
+}
+
+.content ul {
+	font-family: 'Nunito', sans-serif;
+}
+
+.content ol h3 {
+    text-decoration: underline;
+}
+
+.content span {
+    font-family: 'Nunito', sans-serif;
+}
+
+.picking {
+    background-color: rgba(26,128,300, 0.15);
+    padding: 33px;
+    border-radius: 20px;
+}
+
+.spell-box{
+  display: flex;
+  flex-direction: row;
+  padding-top: 33px;
+}
+
+.left-box {
+  flex: 1 1 25%;
+  padding: 0px 15px;
+}
+
+.right-box {
+  flex: 0 0 60%;
+  padding-right: 33px;
+}
+
+table {
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+thead {
+  font-weight: bold;
+  background-color: gray;
+  color: seashell;
+  background-color: #20537E;
+}
+
+th, td {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: normal;
+    width: 100px;
+    padding: 0 5px;
+}
+
+.bordered-box {
+    border: 40px solid transparent;
+    padding-left: 15px;
+    border-image: url(./border.png) 50 round; 
+    background-clip: padding-box;
+}
+
+.spell-description li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  .mytext {margin-left:-5em;}
+  .mytext:first-line {margin-left:0;}
+}
+
+.detail {
+	flex: 1 1 25%;
+	margin-left: 30px;
+}
+
+.detail2 {
+	flex: 2 1 50%;
+	font-family: 'Nunito', sans-serif;
+	margin-right: 30px;
+	margin-left: 75;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 60%;
+    border-top: 4px dotted #20537E;
+    margin-bottom: 75px;
+    margin-top: 25px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+footer {
+	font-size: 12px;
+	color: seashell;
+	background-color: #20537E;
+	border-top: 2px solid seashell;
+	margin-top: 25px;
+}
+
+
+
+
+
+
+/* MOBILE RESPONSIVE CODE FOLLOWS */
+
+
+@media screen and (max-width: 1200px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+    header {
+    position: absolute;
+    flex-grow: 2;
+  }
+
+  header h1 {
+    text-align: left;
+  }
+
+#mobile-menu {
+  display: block;
+  float: right;
+  padding: 10px;
+}
+
+#myLinks {
+  min-width: 180px;
+  display: block;
+}
+
+#myLinks li {
+  list-style: none;
+}
+
+#myLinks a {
+  float: right;
+  display: hidden;
+  color: seashell;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #20537E ;
+}
+
+nav {
+  display:none;
+}
+
+body {
+  font-size:calc(12px + 1vw);
+}
+
+.welcome {
+  width: 100%;
+}
+
+.flex-container {
+  width: 100%;
+}
+
+.index {
+  flex: 1;
+}
+
+.index img {
+  float: none;
+  max-width: 100%;
+}
+
+.index ol {
+  text-align: center;
+  margin-top: 0;
+  font-size:calc(12px + 1.5vw);
+  padding-right: 0px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #20537E; /* Set a background color */
+    color: seashell; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 18px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
