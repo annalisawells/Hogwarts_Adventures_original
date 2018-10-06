@@ -69,8 +69,6 @@ header {
   display: none;
 }
 
-/* TODO: When going from small screen back to full size, #myLinks stays visible next to title */
-
 nav {
 	text-align: right;
 	font-family: "Permanent Marker";
@@ -233,7 +231,8 @@ div.points img {
   display: inline-block;
   text-align: left;
   float: left;
-  position: relative
+  position: relative;
+  width: 225px;
 }
 
 .index ol h2 {
@@ -251,8 +250,9 @@ div.points img {
 	opacity: 0.55;
 }
 
-.extra-padding {
-	padding-top: 50px;
+.scroll-image {
+  max-width: 700px;
+  padding: 0;
 }
 
 .content {
@@ -264,6 +264,70 @@ div.points img {
 
 .content ul {
 	font-family: 'Nunito', sans-serif;
+}
+
+.content ol h3 {
+    text-decoration: underline;
+}
+
+.content span {
+    font-family: 'Nunito', sans-serif;
+}
+
+.picking {
+    background-color: rgba(26,128,300, 0.15);
+    padding: 33px;
+    border-radius: 20px;
+}
+
+.spell-box{
+  display: flex;
+  flex-direction: row;
+  padding-top: 33px;
+}
+
+.left-box {
+  flex: 1 1 25%;
+  padding: 0px 15px;
+}
+
+.right-box {
+  flex: 0 0 60%;
+  padding-right: 33px;
+}
+
+table {
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+thead {
+  font-weight: bold;
+  background-color: gray;
+  color: seashell;
+  background-color: #20537E;
+}
+
+th, td {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: normal;
+    width: 100px;
+    padding: 0 5px;
+}
+
+.bordered-box {
+    border: 40px solid transparent;
+    padding-left: 15px;
+    border-image: url(./border.png) 50 round; 
+}
+
+.spell-description li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .detail {
@@ -284,6 +348,8 @@ hr {
     height: 1px;
     width: 60%;
     border-top: 4px dotted #20537E;
+    margin-bottom: 75px;
+    margin-top: 25px;
 }
 
 .row {
@@ -344,7 +410,7 @@ nav {
 }
 
 body {
-  font-size:calc(12px + 1.5vw);
+  font-size:calc(12px + 1vw);
 }
 
 .welcome {
