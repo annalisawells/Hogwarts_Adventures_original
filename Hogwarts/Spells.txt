@@ -1,0 +1,335 @@
+Spells: 
+
+Ch – Charm 
+Co – Conjuration 
+Cu – Curse 
+J – Jinx 
+M – Mind 
+T – Transfiguration 
+
+1. Spell Name (type)
+	Cast check: (Casting aggresively OR Casting normally) + 10 + character level // 
+				Check: 1d20 + (Class bonus) + Spellcraft
+	Range: how close you have to be to where you want the spell to "exist"
+			Standard = Magic mod x5 ft
+	Duration: DM discretion
+	Effect: what the spell does
+	Counterspell: what can negate/reduce it
+
+
+Below TN: Failure
+Equal to TN: Marginal Success
+1-5 above TN: Complete Success
+6-10 above TN: Superior success
+11+ above TN: Extraordinary success
+
+			Extraordinary -
+			Superior -
+			Complete -
+			Marginal -
+
+
+CASTING A CURSE: -5 penalty for Level 1 Curses
+
+RESISTING SPELLS:
+A character can attempt to resist any spell once per game session or upon Narrator approval, with a successful Willpower test equal to the caster’s Spellcraft result. 
+Note about resisting Mind Spells: All spells of this specialty can be resisted using a
+Willpower test against the Spellcraft result.
+
+Cantrips:
+
+1. Opening Spell [ALOHOMORA] (J)
+	Cast check: 5/5
+	Range: Standard
+	Effect: A portal such as a locked door or gate is opened. Using this spell on Muggle doors
+and locks opens them instantly on a successful Spellcraft check. 
+	Counterspell: Locking Spell
+	Failure: On a Disastrous Failure, if the portal has a locking mechanism, it is broken adding an
+extra +10 TN to open the physically or with magic.
+
+2. Locking Spell [COLLOPPORTUS] (Ch, J)
+	Cast check: 5/5
+	Range: Standard
+	Effect: A portal such as a door or gate is sealed magically, making it physically unable to be
+opened with a key or lockpicking.
+	Counterspell: Opening Spell, Imperturbable Charm
+	Failure: On a Disastrous Failure, if the portal has a locking mechanism, it is broken
+
+3. Illuminate [LUMOS] (Ch)
+	Cast check: 5/5
+	Range: N/A
+	Effect: A small light glows from the end of the caster's wand. The radius of the light is
+			equal to your Magic Modifier x5 in feet. This light may emanate from a different
+			object if the end of the caster's wand is touching it while the spell is cast. If this
+			option is used, the light's duration will be halved.
+	Counterspell: Night Spell [NOX]
+
+4. Night Spell [Nox] (J)
+	Cast check: 5/5
+	Range: Standard
+	Effect: This spell puts out small individual lights like lamps, candles, flashlights, etc.
+	Counterspell: Illuminate
+
+5. Conjurus Spell [ACCIO ...] (Co)
+	Cast check: 10/5
+	Range: Touch
+	Effect: This spell causes a number of objects, of which the casters determines, to appear.
+			Extraordinary -	1 Huge object, 3 Large objects, 5 Medium objects, 10 Small or 20 Tiny 					objects
+ 			Superior -  	1 Large object, 3 Medium objects, 5 Small objects, 10 Tiny objects
+ 			Complete - 		1 Medium object, 3 Small objects, 5 Tiny objects
+ 			Marginal -  	1 Small object, 3 Tiny category objects
+
+6. Create flame [INCENDIO] (Co)
+	Cast check: 5/5
+	Range: N/A
+	Effect: A small fire shoots out from the end of the wand to no more than 5 feet. It is
+			enough to start a campfire or light a torch.
+	Counterspell: Extinguishing Spell
+	Failure: A loud snap, a spark, and a whiff of sulfur are all you get if you fail this spell.
+
+7. Smoke-raising [FUMOS] (Co)
+	Cast check: 5/5
+	Range: Standard
+	Effect: A cloud of smoke with a radius in feet equal to the caster's Magic attribute appears.
+
+8. Levitation [WINGARDIUM LEVIOSA] (Ch)
+	Cast check: 5/5*
+	Range: Standard
+	Effect:  Allows the caster to levitate an object into the air, but the size of the object affects the difficulty of the Spellcraft test, so add +2 TN* for every size category greater than Tiny the object is. The only action the caster may make the object do is move up and down.The height at which the caster can levitate a target is feet equal to her Magic attribute x10. 
+
+9. Repair [REPARO] (T, J)
+	Cast check: 5/5
+	Range: Standard
+	Effect: This spell repairs broken objects such as glasses, jars, tables, etc. Any parts broken
+			off instantly disappear or apparently reattached by the spell. The size of the object
+			will affect the effectiveness of the spell so add +2 TN for every size category larger
+			than Tiny that the object is. 
+
+
+
+
+
+Level 1:
+
+1. Amplify (Ch, J)
+	Cast check: 5/5
+	Range: Self or touch
+	Effect: How the spell works
+	Counterspell: To counter a spell in response to one just cast, the Spellcraft
+			test must be equal to or greater than the Spellcraft result of the opposing spell. To
+			counter a spell that is already in effect, the TN to disrupt or dispel it is equal to the
+			Spellcraft result +2. 
+	Failure: What happens if the Spellcraft test to cast the spell fails. Typically nothing happens
+			if the attempt to cast the spell fails unless a failure is noted. 
+
+2. Aviary (Co)
+	Cast check: 10/5
+	Range: N/A
+	Effect: A loud bang and out flutter birds from the end of the wand. 
+			Extraordinary - 1 Magical bird: Pheonix, Roc; 
+							or +2 Large birds: Ostrich, Axe Beak, Giant Falcon
+ 			Superior - 5 Birds of Prey: eagles, hawks, Vultures 
+ 			Complete - 5 Small birds: Ravens, Owls, Parrots
+ 			Marginal - 5 Tiny birds: Sparrows, Chickadees, Finches  
+	Failure: A loud bang and burnt feathers come from the end of the wand
+
+3. Cleaning spell (Ch)
+	Cast check: 5/5
+	Range: Standard
+	Effect: This simple charm arranges books, scours pots, and removes dirt from an area.
+ 			Extraordinary - 4x4 yard area
+ 			Superior - 2x2 yard area
+ 			Complete - 1x1 yard area
+ 			Marginal - 1x1 foot area 
+	Failure: On a Disastrous Failure, the area that is intended to be tidied is made to look 				doubly worse than before (i.e. extra mud or dirt, contents of a cauldron erupt out 			   of it, etc.). 
+
+4. Color-change (T)
+	Cast check: 5/5
+	Range: Touch
+	Effect: Alters the color of the target to the desired color of the caster.
+			Extraordinary - Huge object or larger
+ 			Superior - Large Object or Smaller
+ 			Complete - Medium Object or Smaller
+ 			Marginal - Small Object or smaller 
+
+7. Curse of the Bogies (Cu)
+	Cast check: 15/10
+	Range: Standard
+	Effect: This spell causes the target's nose to inflate a bit and run perpetually. This
+			will cause a -2 penalty to tasks that require concentration and casting spells.
+
+8. Curse of Boils and Sores (Cu)
+	Cast check: 15/10
+	Range: Standard
+	Effect: Boils and sores break out all over the target's body. The target can attempt to shrug  	 		of the effects of this spell with Stamina test with a TN equal to the Spellcraft check. 	The pain from this curse causes the target to suffer a -2 penalty per level of success to all Wisdom checks. 
+
+9. Curse of the Slugs (Cu)
+	Cast check: 15/10
+	Range: Standard
+	Effect: This curse causes the target to regurgitate slugs uncontrollably. It also causes the
+			target to become distracted and incurs a -2 penalty to physical tests per level of
+			success. 
+	Failure: On a Disastrous Failure, the spell affects the caster as if spell were cast with an
+			Extraordinary Success (1d6 x Magic mod hours). 
+
+10. Disappearing Spell (T)
+	Cast check: 10/5
+	Range: Touch
+	Effect: The writing and all marks created by the target writing utensil (crayon, quill, pencil,
+			etc.) to disappear once the writer has completed writing. The writing remains
+			invisible until either the spell wears off or is dispelled or countered.
+	Counterspell: Appearing Spell
+
+11. Disruption (J)
+	Cast check: 10/5
+	Range: Standard
+	Effect: This spell disrupts the normal function of a spell or ability that has a duration (not
+			permanent effects), but does not break or dispel the spell. To have any effect against
+			the spell, the caster's Spellcraft result must be greater than the Spellcraft result of the spell she is attempting to disrupt. 
+
+12. Drought Charm (Ch)
+	Cast check: 10/5
+	Range: Standard
+	Effect: Dries up a volume of water 
+			Extraordinary -  3d6 + (Magic Modifier x3) cubic yards
+			Superior - 2d6 + (Magic Modifier x2) cubic yards
+			Complete - 1d6 + Magic Modifier cubic yards
+			Marginal - 1 cubic foot
+
+13. Entrancing Spell (M)
+	Cast check: 10/5
+	Range: Standard
+	Effect: The target is overcome by an emotion as determined by the caster (happy, sad, angry,
+			etc.). The effect is a distraction to the target causing a -2 penalty per success level to all Wisdom checks
+
+14. Extinguishing Spell (J)
+	Cast check: 10/5
+	Range: Standard
+	Effect: This spell puts out fires. The area of fire put out by the spell is equal to the
+difference between the result and TN in square feet
+
+16. Fountain Spell (Co)
+	Cast check: 10/5
+	Range: N/A
+	Effect: A stream of potable liquid, type determined by the caster, squirts from the end of her
+			wand. 
+			Extraordinary - 1 barrel
+			Superior - 1 gallon
+			Complete - 1 quart
+			Marginal - 1 cup
+
+17. Four Points Charm (Ch)
+	Cast check: 5/5
+	Range: N/A
+	Effect: This simple charm turns the caster's wand into a compass where it will float into the
+			air above her hand and point in the direction of north. 
+	Failure: On a Disastrous Failure, the wand will float and spin, stopping periodically in
+			different directions
+
+18. Impediment Curse (Cu)
+	Cast check: 15/10
+	Range: Standard
+	Effect: Otherwise known as the "Trip Curse,” this spell causes the target to lose her footing
+			and fall to the ground prone.
+
+18. Jelly-legs Jinx (J)
+	Cast check: 10/5
+	Range: Standard
+	Effect: Causes the target's legs to wobble uncontrollably giving her a –2 to any Strength checks.
+
+18. Polymorph Object (T)
+	Cast check: 5/5
+	Range: Touch
+	Effect: The caster transforms an inanimate object into whatever the caster desires. If the
+caster changes its size, apply a +2 TN modifier to the Spellcraft check for every size
+category larger or smaller. If the caster selects the new form to be a living creature,
+add the appropriate modifier(s), below, to the Spellcraft test.
+ TN 	Form
+
+ +1 	Plant or invertebrate
+ +2 	Fish
+ +3 	Amphibian/Bird
+ +4 	Reptile
+ +5 	Mammal
+ +10 	Dragon (minimum size Mammoth)
+ +2 	If creature is magical (excluding dragons)
+ 	Failure: On a Disastrous Failure, the object is incompletely transfigured. If changing into an
+			animal, it would be dead.
+
+18. Quiet (Ch, J)
+	Cast check: 5/5
+	Range: Standard
+	Effect: With a tap to the throat with your wand, the target's voice is reduced in volume
+			many times of normal.
+	Counterspell: Amplify
+
+18. Resitance Charm (Ch)
+	Cast check: 10/5
+	Range: Standard
+	Effect: Shields target from liquid. 
+			Extraordinary - 32 sq. ft
+			Superior - 16 sq. ft
+			Complete - 4 sq. ft
+			Marginal - 1 sq. ft
+
+18. Restoring Jinx (J)
+	Cast check: 10/5
+	Range: Standard
+	Effect: With a loud zap and crackle, this spell causes a shapechanger target to revert to its
+			natural form or other effects particular to the target.
+	Failure: If this spell fails, the creature either retains its form or, if a Boggart, changes 		 into another form that the character is afraid of.
+
+18. Severing Spell (T, Cu)
+	Cast check: 5**/5
+	Range: Standard
+	Effect: Causes things to be damaged as though they were cut by something. The type of
+			things affected by this spell depends upon success of the Spellcraft test. **If cast to
+			injure a person or living thing, it is considered a Curse concerning bonuses (15/10), penalties, and other effects; it will cause no more than 1 point of damage. 
+			Extraordinary - Very hard substances (rock, brick, metal) 
+			Superior - Harder substances (wood, plastics) 
+			Complete - Normal fabrics (clothing, drapes)
+			Marginal - Fragile items (paper, string) 
+	Counterspell: Repair
+
+18. Slippery Spell (Ch, J)
+	Cast check: 10/5
+	Range: Standard
+	Effect: This spell causes a surface with an area equal to (5 + Magic Modifier)^2 feet to
+			become very slippery. A TN 10 Acrobatics skill test is required to keep your
+			footing.
+	Counterspell: Sticking Charm
+	Failure: A bit of oil dribbles out the end of the caster's wand.
+
+18. Sparks (Co)
+	Cast check: 10/5
+	Range: 10 ft
+	Effect: A small jet of waterproof sparks of a color determined by the caster is emitted from
+			the end of her wand. If used as a weapon, this spell deals 1d6 points of damage and
+			ignites things that are very flammable.
+	Counterspell: Extinguishing spell
+	Failure: On a Disastrous Failure, a few small, sputtering embers feebly fall from the end of
+			the caster's wand.
+
+18. Sticking Charm (Ch, J)
+	Cast check: 10/5
+	Range: Touch
+	Effect: Causes the target to become very sticking. It takes a Strength check equal to the
+			successful Spellcraft result -5 to remove the object from another. 
+	Counterspell: Slippery Charm
+	Failure: A bit of glue dribbles out the end of the caster's wand. 
+
+18. Stinging Hex (Cu)
+	Cast check: 15/10
+	Range: Standard
+	Effect: Damage to target:
+			Extraordinary - 1d6 x Magic Mod
+			Superior - 1d6 + Magic Mod
+			Complete - Magic Mod
+			Marginal - -1
+
+18. Tickling Jinx (J)
+	Cast check: 10/5
+	Range: Standard
+	Effect: Causes a person to laugh uncontrollably. The target has a –2 penalty per level of
+			success to all physical tests and casting spells
+

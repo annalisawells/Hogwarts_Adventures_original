@@ -143,6 +143,16 @@ a {
     position: relative;
    }
 
+.section {
+  padding-top: 33px;
+  padding-bottom: 33px;
+    background-color: #F1F2C5;
+    width: 1200px;
+    margin: auto;
+    color: black;
+    position: relative;
+}
+
 .houseCupTitle {
 	flex: 1 1 25%;
 	font-size: 45px;
@@ -171,7 +181,7 @@ div.points img {
 }
 
 .map {
-	flex: 2 2 60%;
+	flex: 1 1 85%;
 	margin-right: 33px;
   height: 450px;
   position: relative;
@@ -199,9 +209,9 @@ div.points img {
 }
 
 .img-gryffindor {
-  background-image: url(./GryffindorCommonRoom.jpg);
+  background-image: url(./GryffindorCommonRoom_PM.jpg);
   background-repeat: no-repeat;
-  background-position: right -212px;
+  background-position: center;
   overflow: hidden;
 }
 
@@ -245,7 +255,7 @@ div.points img {
 }
 
 .index ol {
-	margin: 57px;
+	mmargin: auto;
   display: inline-block;
   text-align: left;
   position: relative;
