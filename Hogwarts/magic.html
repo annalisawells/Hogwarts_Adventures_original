@@ -1,41 +1,41 @@
 <!doctype HTML>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="./style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<script src="style.js"></script>
-	<title> Welcome to Hogwarts!
-	</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="style.js"></script>
+  <title> Welcome to Hogwarts!
+  </title>
 </head>
 
 <body>
 <header class="flex-container">
-	<a href="./index.html"><h1>Welcome to Hogwarts!</h1></a>
-		
-  <!-- Navigation links (hidden by default) -->
-<div id="mobile-menu" class="fas fa-feather-alt fa-2x" onclick="myFunction()"></div>
-<div id="myLinks" >
-  <ul id="linkList" style="display: none">
-  <ul>
-  <li><a href="./characterCreation.html">Creating a Character</a>
-  <li><a href="./index.html#houseCup">Houses</a>
-  <li><a href="./magic.html">Magic</a>
-  <li><a href="./store.html">Goods &amp; Services</a>
-  </ul>
+  <h1><a href="./index.html">Welcome to Hogwarts!</a></h1>
+    
+    <!-- Mobile Navigation links (hidden by default) -->
+<div id="mySidepanel" class="sidepanel"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="./characterCreation.html">Creating a Character</a>
+<a href="./index.html#houseCup">Houses</a>
+<a href="./magic.html">Magic</a>
+<a href="./spells.html">Spells</a>
+<a href="./store.html">Goods &amp; Services</a>
 </div>
+
+<div id="mobile-menu" class="fas fa-feather-alt fa-2x" onclick="openNav()"></div>
+
 
  <!-- Navigation links (visible by default) -->
 <nav>
-	<ul>
-		<li><a href="./characterCreation.html">Creating a Character</a></li>
-		<li><a href="./index.html#houseCup">Houses</a></li>
- 		<li><a href="./magic.html">Magic</a></li>
- 		<li><a href="./store.html">Goods &amp; Services</a></li>
- 	</ul>
+  <ul>
+    <li><a href="./characterCreation.html">Creating a Character</a></li>
+    <li><a href="./index.html#houseCup">Houses</a></li>
+    <li><a href="./magic.html">Magic</a></li>
+    <li><a href="./spells.html">Spells</a></li>
+    <li><a href="./store.html">Goods &amp; Services</a></li>
+  </ul>
 </nav>
-	
+  
 </header>
-
 
 <!-- Welcome Landing -->
 <div class="flex-container welcome">
@@ -46,14 +46,8 @@
   </a></div>
 </div>
 
-<!-- First Section: Magic -->
-<div class="flex-container main">
-<div class="houseCupTitle">
-	<h1>Magic</h1>
-</div>
-</div>
-
-<div class="flex-container section">
+<!-- First Section: House Cup Stats -->
+<div class="flex-container main top-section">
 	<div class="houseCupTitle">
 	<h2>Hogwarts Classes</h2>
 </div>
@@ -168,8 +162,12 @@
 	</div>
 
 
+<!-- To Top Menu Scroll -->
+<button class="fas fa-level-up-alt" onclick="topFunction()" id="myBtn"></button>
+ 
 </div>
-
+ 
+<!-- Footer -->
 <footer>
 	<p>&copy; Annalisa Wells, 2018. <br>The events depicted in this movie are fictitious. Any similarity to any person living or dead is merely coincidental. <br>All images and content are inspired by <a href="https://www.pottermore.com/">the Harry Potter series/Pottermore (author: J.K. Rowling)</a> and the "<a href="http://meetthenewboss.info/kent/hogwarts/Harry%20Potter%20RPG%20Core%20Rule%20Book.pdf">Harry Potter: Core Rule Book" (adapted by Matthew A. Kearns)</a>
 </footer>
