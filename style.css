@@ -31,17 +31,17 @@
 }
 
 html {
-	display: block;
+  display: block;
 }
 
 body {
-	margin: 0;
-	font-family: "Spirax", Helvetica, sans-serif;
-	color: seashell;
-	background-color: #20537E;
-	font-size: 20px;
-	text-align: center;
-	positon: relative;
+  margin: 0;
+  font-family: "Spirax", Helvetica, sans-serif;
+  color: seashell;
+  background-color: #20537E;
+  font-size: 20px;
+  text-align: center;
+  positon: relative;
 }
 
 .flex-container {
@@ -51,27 +51,29 @@ body {
 }
 
 header {
-	z-index: 10;
-	width: 100%;
-	height: 70px;
-	border-bottom: 2px solid seashell;
-	color: seashell;
-	position: fixed;
-	background-color: #20537E;
-	top: 0;
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid seashell;
+  color: seashell;
+  position: fixed;
+  background-color: #20537E;
+  top: 0;
+  white-space: nowrap;
 }
+
 
 #mobile-menu {
   display: none;
 }
 
-#myLinks {
+.sidepanel {
   display: none;
 }
 
 nav {
-	text-align: right;
-	font-family: "Permanent Marker";
+  text-align: right;
+  font-family: "Permanent Marker";
   flex-grow: 1;
   display: inline-block;
   padding-right: 10px;
@@ -89,41 +91,44 @@ nav li {
 }
 
 header h1 {
-	display: block;
-	text-align: left;
-	color:seashell;
-	padding: 0px 20px;
+  flex: 1;
+  display: block;
+  text-align: left;
+  color:seashell;
+  padding: 0px 20px;
   font-size: 42px;
-	letter-spacing: 1px;
-	margin-top: 10px;
+  letter-spacing: 1px;
+  margin-top: 10px;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .welcome {
-	margin-top: 3px;
-	width: 1200px;
+  margin-top: 3px;
+  width: 1200px;
   height: 450px;
+  top: 100px;
   background-image: url(./hogwarts_watercolor.jpg);
   background-repeat: no-repeat;
   background-position: center -136px;
-	opacity: 0.97;
-	color: black;
-	margin: auto;
-	position: relative;
+  opacity: 0.97;
+  color: black;
+  margin: auto;
+  position: relative;
+  border-bottom: 9px solid #20537E;
 }
 
 .intro {
-	height: 90px;
-  	width: auto;
-  	position: absolute;
-  	top: 155px;
+  height: 90px;
+    width: auto;
+    position: absolute;
+    top: 155px;
     right: 88px;
     font-size: 25px;
-   	font-family: "Permanent Marker";
+    font-family: "Permanent Marker";
 }
 
 #myBtn {
@@ -131,23 +136,36 @@ a {
 }
 
 .main {
-	margin-top: 10px;
-	padding-top: 33px;
-	padding-bottom: 33px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
     background-color: #F1F2C5;
     width: 1200px;
     margin: auto;
     color: black;
-    border-top: 9px solid #20537E;
-    border-bottom: 9px solid #20537E;
     position: relative;
    }
 
+.top-section {
+  margin-top: 100px;
+}
+
+.section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+    background-color: #F1F2C5;
+    width: 1200px;
+    margin: auto;
+    color: black;
+    position: relative;
+}
+
 .houseCupTitle {
-	flex: 1 1 25%;
-	font-size: 45px;
-	padding: 0px 35px;
+  flex: 1 1 25%;
+  font-size: 45px;
+  padding: 0px 35px;
   display: flex;
+  height: auto;
   align-items: center;
   justify-content: center;
 }
@@ -165,14 +183,13 @@ div.points:hover {
 }
 
 div.points img {
-	padding-top: 14px;
+  padding-top: 14px;
     width: 150px;
     height: auto;
 }
 
 .map {
-	flex: 1 1 85%;
-	margin-right: 33px;
+  flex: 1 1 85%;
   height: 450px;
   position: relative;
 }
@@ -206,26 +223,26 @@ div.points img {
 }
 
 .story {
-	margin-top: 45px;
+  margin-top: 45px;
 }
 
 .story h2 {
-	font-family: "Permanent Marker", sans-serif;
+  font-family: "Permanent Marker", sans-serif;
 }
 
 .handwriting {
-	font-family: 'Satisfy', sans-serif;
-	font-size: 25px;
-	overflow-y: auto;
-	overflow-x: hidden;
-	max-height: 700px;
-	width: 70%;
-	display: block;
-	margin-bottom: 33px;
+  font-family: 'Satisfy', sans-serif;
+  font-size: 25px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 700px;
+  width: 70%;
+  display: block;
+  margin-bottom: 33px;
 }
 
 .index {
-	flex: 2 2 60%;
+  flex: 2 2 60%;
   background-color: rgba(128,128,128, 0.15);
   margin-right: 33px;
   text-align: center;
@@ -237,7 +254,7 @@ div.points img {
 }
 
 .index img {
-	float: left;
+  float: left;
     height: 312px;
     width: auto;
     padding: 45px;
@@ -245,7 +262,7 @@ div.points img {
 }
 
 .index ol {
-	margin: 57px;
+  mmargin: auto;
   display: inline-block;
   text-align: left;
   position: relative;
@@ -253,18 +270,18 @@ div.points img {
 }
 
 .index ol h2 {
-	text-align: left;
+  text-align: left;
     text-decoration: underline;
     font-size: 35px;
     font-weight: bold;
 }
 
 .index li {
-	padding-left: 10px;
+  padding-left: 10px;
 }
 
 .index a:hover {
-	opacity: 0.55;
+  opacity: 0.55;
 }
 
 .scroll-image {
@@ -273,14 +290,14 @@ div.points img {
 }
 
 .content {
-	width: 80%;
-	text-align: left;
-	padding-left: 20px;
+  width: 80%;
+  text-align: left;
+  padding-left: 20px;
   letter-spacing: 1.5px;
 }
 
 .content ul {
-	font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .content ol h3 {
@@ -295,6 +312,7 @@ div.points img {
     background-color: rgba(26,128,300, 0.15);
     padding: 33px;
     border-radius: 20px;
+    text-align: center;
 }
 
 .spell-box{
@@ -342,24 +360,39 @@ th, td {
     background-clip: padding-box;
 }
 
+
+.spell-description {
+  flex: 1 1 50%;
+}
+
 .spell-description li {
   list-style: none;
   margin: 0;
   padding: 0;
-  .mytext {margin-left:-5em;}
-  .mytext:first-line {margin-left:0;}
+}
+
+.spell-detail img {
+  height: auto;
+  width: 200px;
+  padding: 30px;
 }
 
 .detail {
-	flex: 1 1 25%;
-	margin-left: 30px;
+  flex: 1 1 25%;
+  margin-left: 20px;
+}
+
+.detail img {
+  height: auto;
+  width: 200px;
+  padding-right: 15px;
 }
 
 .detail2 {
-	flex: 2 1 50%;
-	font-family: 'Nunito', sans-serif;
-	margin-right: 30px;
-	margin-left: 75;
+  flex: 2 1 50%;
+  font-family: 'Nunito', sans-serif;
+  margin-right: 30px;
+  margin-bottom: 30px; 
 }
 
 hr {
@@ -379,12 +412,28 @@ hr {
     flex: 50%;
 }
 
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: lightblue; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 18px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
 footer {
-	font-size: 12px;
-	color: seashell;
-	background-color: #20537E;
-	border-top: 2px solid seashell;
-	margin-top: 25px;
+  font-size: 12px;
+  color: seashell;
+  background-color: #20537E;
+  border-top: 2px solid seashell;
+  margin-top: 25px;
 }
 
 
@@ -396,10 +445,11 @@ footer {
 
 
 @media screen and (max-width: 1200px) {
-  /* comes into effect for screens less than or equal to 320 pixels */
+  /* comes into effect for screens less than or equal to 1200 pixels */
     header {
     position: absolute;
-    flex-grow: 2;
+    flex-grow: 1;
+    height: 120px;
   }
 
   header h1 {
@@ -410,26 +460,6 @@ footer {
   display: block;
   float: right;
   padding: 10px;
-}
-
-#myLinks {
-  min-width: 180px;
-  display: block;
-}
-
-#myLinks li {
-  list-style: none;
-}
-
-#myLinks a {
-  float: right;
-  display: hidden;
-  color: seashell;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  background-color: #20537E ;
 }
 
 nav {
@@ -464,6 +494,7 @@ body {
   padding-right: 0px;
 }
 
+
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -482,4 +513,58 @@ body {
 
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* The sidepanel menu */
+.sidepanel {
+    display: block;
+    height: auto; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #20537E; /* Same blue as bkg*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 35px;
+  padding-right: 10px; /* Place content 35px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: seashell;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
 }

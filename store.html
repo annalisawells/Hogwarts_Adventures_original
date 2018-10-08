@@ -1,39 +1,40 @@
 <!doctype HTML>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="./style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<script src="style.js"></script>
-	<title> Welcome to Hogwarts!
-	</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="style.js"></script>
+  <title> Welcome to Hogwarts!
+  </title>
 </head>
 
 <body>
 <header class="flex-container">
-	<a href="./index.html"><h1>Welcome to Hogwarts!</h1></a>
-		
-  <!-- Navigation links (hidden by default) -->
-<div id="mobile-menu" class="fas fa-feather-alt fa-2x" onclick="myFunction()"></div>
-<div id="myLinks" >
-  <ul id="linkList" style="display: none">
-  <ul>
-  <li><a href="./characterCreation.html">Creating a Character</a>
-  <li><a href="./index.html#houseCup">Houses</a>
-  <li><a href="./magic.html">Magic</a>
-  <li><a href="./store.html">Goods &amp; Services</a>
-  </ul>
+  <h1><a href="./index.html">Welcome to Hogwarts!</a></h1>
+    
+    <!-- Mobile Navigation links (hidden by default) -->
+<div id="mySidepanel" class="sidepanel"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="./characterCreation.html">Creating a Character</a>
+<a href="./index.html#houseCup">Houses</a>
+<a href="./magic.html">Magic</a>
+<a href="./spells.html">Spells</a>
+<a href="./store.html">Goods &amp; Services</a>
 </div>
+
+<div id="mobile-menu" class="fas fa-feather-alt fa-2x" onclick="openNav()"></div>
+
 
  <!-- Navigation links (visible by default) -->
 <nav>
-	<ul>
-		<li><a href="./characterCreation.html">Creating a Character</a></li>
-		<li><a href="./index.html#houseCup">Houses</a></li>
- 		<li><a href="./magic.html">Magic</a></li>
- 		<li><a href="./store.html">Goods &amp; Services</a></li>
- 	</ul>
+  <ul>
+    <li><a href="./characterCreation.html">Creating a Character</a></li>
+    <li><a href="./index.html#houseCup">Houses</a></li>
+    <li><a href="./magic.html">Magic</a></li>
+    <li><a href="./spells.html">Spells</a></li>
+    <li><a href="./store.html">Goods &amp; Services</a></li>
+  </ul>
 </nav>
-	
+  
 </header>
 
 <!-- Welcome Landing -->
@@ -45,8 +46,8 @@
   </a></div>
 </div>
 
-<!-- First Section: House Cup Stats -->
-<div class="flex-container main">
+<!-- TODO: First Section: Goods, Store -->
+<div class="flex-container main top-section">
 <p> This page is still under construction!!</p>	</div>
 
 </div>
