@@ -412,6 +412,11 @@ hr {
     flex: 50%;
 }
 
+.embed {
+  text-align: center;
+  margin: auto;
+}
+
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
