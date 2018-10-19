@@ -316,6 +316,10 @@ div.points img {
     margin: auto;
 }
 
+.picking ul {
+  list-style: none;
+}
+
 .picking-top-right {
     background-color: rgba(26,128,300, 0.15);
     padding: 33px;
