@@ -316,7 +316,7 @@ div.points img {
     margin: auto;
 }
 
-.picking ul {
+.picking ul li {
   list-style: none;
 }
 
